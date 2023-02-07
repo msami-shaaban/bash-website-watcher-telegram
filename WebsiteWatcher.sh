@@ -8,9 +8,8 @@
 
 send_mesage_to_telegram()
 {
-  message=`curl -s $link|jq -r '.events'[0]|sed '$d'|sed '1d'|tr -d '"'`
   cat <<EOF
-curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "{CHAT_ID},", "text": "$link was updated! \n\n$message", "disable_notification": false}' https://api.telegram.org/bot{TOKEN}/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "{CHAT_ID},", "text": "$link was updated!", "disable_notification": false}' https://api.telegram.org/bot{TOKEN}/sendMessage
 EOF
 }
 
