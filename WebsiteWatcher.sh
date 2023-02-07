@@ -1,6 +1,6 @@
 #To run this script periodicly create a cron job by running "crontab -e" and inserting the line "#*/10 * * * * WebsiteWatcher.sh" to run every 10 minutes
 
-#create bot on Telegram app by h=chatting with @BotFather
+#create bot on Telegram app by chatting with @BotFather
 #curl https://api.telegram.org/bot{TOKEN}/getUpdates
 #get chat_id
 #curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "{CHAT_ID},", "text": "$link was updated!", "disable_notification": false}'      https://api.telegram.org/bot{TOKEN}/sendMessage
