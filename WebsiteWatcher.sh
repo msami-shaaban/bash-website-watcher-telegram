@@ -1,4 +1,4 @@
-#To run this script periodicly create a cron job by running "crontab -e" and inserting the line "#*/10 * * * * WebsiteWatcher.sh" to run every 10 minutes
+#To run this script periodicly create a cron job by running "crontab -e" and inserting the line "*/10 * * * * WebsiteWatcher.sh" to run every 10 minutes
 
 #create bot on Telegram app by chatting with @BotFather
 #get Token and replace {TOKEN} with it in script
